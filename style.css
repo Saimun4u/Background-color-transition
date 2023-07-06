@@ -14,18 +14,47 @@ body {
 }
 
 .hex-colors {
-  border: 1px solid black;
   text-align: center;
 }
 
 .hex-colors h1 {
   font-size: 2rem;
   text-transform: uppercase;
-  animation: changecolor 5s infinite alternate;
+  animation: colorchange 5s infinite alternate;
 }
 
 .hex-colors h2 {
-  border: 1px solid black;
   font-size: 2rem;
   margin-top: 15%;
+}
+
+@keyframes colorchange {
+  0% {
+    color: rgb(142, 228, 238);
+  }
+  40% {
+    color: rgb(5, 217, 245);
+  }
+  60% {
+    color: rgb(4, 102, 207);
+  }
+  80% {
+    color: rgb(7, 144, 23);
+  }
+  100% {
+    color: rgb(246, 43, 7);
+  }
+}
+
+@media (max-width: 480px) {
+  .hex-colors h1 {
+    font-size: 1.5rem;
+  }
+  .hex-colors h2 {
+    font-size: 1.5rem;
+  }
+}
+
+#changeColor {
+  margin-top: 20px;
 }
