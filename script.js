@@ -1,4 +1,5 @@
 const changeColor = document.getElementById('changeColorBtn');
+let hex_code = document.getElementById('hex-code');
 
 function generateColor() {
   let hexColor = '#';
@@ -25,6 +26,7 @@ function generateColor() {
     let random_index = Math.floor(Math.random() * hex_numbers.length);
     hexColor += hex_numbers[random_index];
     document.body.style.background = hexColor;
+    hex_code.textContent = hexColor;
   }
 }
 
