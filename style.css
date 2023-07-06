@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+.container {
+  border: 1px solid black;
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex-colors {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.hex-colors h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation: changecolor 5s infinite alternate;
+}
+
+.hex-colors h2 {
+  border: 1px solid black;
+  font-size: 2rem;
+  margin-top: 15%;
+}
