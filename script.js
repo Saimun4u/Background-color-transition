@@ -24,7 +24,6 @@ function generateColor() {
   for (let i = 0; i < 6; i++) {
     let random_index = Math.floor(Math.random() * hex_numbers.length);
     hexColor += hex_numbers[random_index];
-    console.log(hexColor);
     document.body.style.background = hexColor;
   }
 }
